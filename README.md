@@ -11,8 +11,13 @@ sudo git clone https://github.com/neocodesoftware/FileMaker-Server-Linux-Scripts
 cd FileMaker-Server-Linux-Scripts
 
 sudo chmod 755 script*.sh
+./script1 etc...
 
-https://dbservices.com/blog/linux-filemaker-server-for-ubuntu
+./script2
+
+./script3
+
+notes from: https://dbservices.com/blog/linux-filemaker-server-for-ubuntu
 
 
 for SSH

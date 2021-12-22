@@ -1,5 +1,5 @@
 #!/bin/bash
 
-fmsadmin set cwpconfig enablexml=true
+fmsadmin GET BACKUPTIME
 
-fmsadmin get cwpconfig
+fmsadmin GET SERVERCONFIG

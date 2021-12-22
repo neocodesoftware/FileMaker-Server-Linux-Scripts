@@ -52,7 +52,7 @@ ssh [username]@[ipaddress]
 
 ## script2
 
-install filemaker
+install filemaker and ngrok
 
 ./script2-install.sh
 
@@ -63,6 +63,14 @@ yes to EULA
 set username to [fmsadminuser]
 
 set pass to [fmsadminpass]
+
+### sign up ngrok
+
+https://ngrok.com
+
+ngrok authtoken [token]
+
+ngrok http https://localhost:16000
 
 ## script 3
 

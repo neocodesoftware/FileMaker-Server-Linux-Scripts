@@ -30,7 +30,7 @@ sudo systemctl reload sshd
 
 sudo systemctl status ssh
 
-ufw allow ssh
+sudo ufw allow ssh
 
 
 

@@ -1,6 +1,6 @@
 # FileMaker-Server-Linux-Scripts
 
-## install OS:
+## install OS
 
 https://releases.ubuntu.com/18.04/ubuntu-18.04.6-live-server-amd64.iso
 
@@ -9,7 +9,7 @@ user : [username]
 pass : [password]
 
 
-## install git:  
+## install git
 
 sudo apt-get install git
 
@@ -20,7 +20,7 @@ cd FileMaker-Server-Linux-Scripts
 sudo chmod 755 script*.sh
 
 
-## run script1:
+## run script1 install
 
 prep for install
 
@@ -50,7 +50,7 @@ ip a
 ssh [username]@[ipaddress]
 
 
-## script2
+## script2 filemaker
 
 install filemaker and ngrok
 
@@ -65,13 +65,11 @@ set username to [fmsadminuser]
 set pass to [fmsadminpass]
 
 
-## script3 check
+## script3 check filemaker
 
 ./script3-fms-check.sh
 
--> see what port filemaker is using
-
-example:
+will show what port filemaker admin console is using. example port 16001
 
 tcp        0      0 127.0.0.1:16001         0.0.0.0:*               LISTEN      1632/facstart.sh
 
@@ -93,10 +91,16 @@ adduser admin
 
 usermod -aG sudo admin
 
+## refresh
+
+sudo git reset --hard
+
+sudo git pull
+
+sudo chmod 755 script*.sh
 
 
-
-with notes from: 
+## notes
 
 https://dbservices.com/blog/linux-filemaker-server-for-ubuntu
 

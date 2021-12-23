@@ -93,11 +93,7 @@ usermod -aG sudo admin
 
 ## refresh
 
-sudo git reset --hard
-
-sudo git pull
-
-sudo chmod 755 script*.sh
+sudo git reset --hard && sudo git pull && sudo chmod 755 script*.sh
 
 
 ## notes

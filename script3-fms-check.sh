@@ -6,6 +6,8 @@ fmsadmin GET BACKUPTIME
 
 fmsadmin GET SERVERCONFIG
 
+# find filemaker processes
 ps -e | grep -e fm -e apache -e fac
 
-sudo netstat -tnlp
+# what port filemaker admin console is using
+sudo netstat -tnlp | grep facstart

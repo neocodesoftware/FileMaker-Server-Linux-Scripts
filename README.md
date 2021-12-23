@@ -64,17 +64,28 @@ set username to [fmsadminuser]
 
 set pass to [fmsadminpass]
 
-### sign up ngrok
+
+## script3 check
+
+./script3-fms-check.sh
+
+-> see what port filemaker is using
+
+example:
+
+tcp        0      0 127.0.0.1:16001         0.0.0.0:*               LISTEN      1632/facstart.sh
+
+## pubslish
 
 https://ngrok.com
 
 ngrok authtoken [token]
 
-ngrok http https://localhost:16000
+ngrok http 16001
 
-## script 3
+example:
 
-./script3-fms-check.sh
+Forwarding                    https://zzz4-96-49-185-99.ngrok.io -> http://localhost:16001
 
 ## notes
 
@@ -85,5 +96,8 @@ usermod -aG sudo admin
 
 
 
-with notes from: https://dbservices.com/blog/linux-filemaker-server-for-ubuntu
+with notes from: 
 
+https://dbservices.com/blog/linux-filemaker-server-for-ubuntu
+
+https://community.claris.com/en/s/question/0D53w00005YBpFhCAL/filemaker-server-194141-on-ubuntu-does-not-start-admin-console

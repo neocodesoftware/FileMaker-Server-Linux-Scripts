@@ -73,7 +73,7 @@ will show what port filemaker admin console is using. example port 16001
 
 tcp        0      0 127.0.0.1:16001         0.0.0.0:*               LISTEN      1632/facstart.sh
 
-## pubslish
+## remote access admin console
 
 https://ngrok.com
 

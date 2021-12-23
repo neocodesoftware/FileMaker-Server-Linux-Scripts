@@ -1,6 +1,7 @@
 #!/bin/bash
 sudo apt-get update -y
 sudo apt-get upgrade -y
+sudo apt install tree
 sudo apt install unzip
 sudo apt install htop
 sudo apt install restic

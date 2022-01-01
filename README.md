@@ -73,6 +73,10 @@ will show what port filemaker admin console is using. example port 16001
 
 tcp        0      0 127.0.0.1:16001         0.0.0.0:*               LISTEN      1632/facstart.sh
 
+## FileMaker Server 19.4.1: Admin Console is now accessible remotely using:
+
+   https://[ipaddress]:443/admin-console
+
 ## fix remote access admin console
 
 issue      : https://[ipaddress]:16000 generates error
@@ -105,3 +109,5 @@ sudo git reset --hard && sudo git pull && sudo chmod 755 script*.sh
 https://dbservices.com/blog/linux-filemaker-server-for-ubuntu
 
 https://community.claris.com/en/s/question/0D53w00005YBpFhCAL/filemaker-server-194141-on-ubuntu-does-not-start-admin-console
+
+https://support.claris.com/s/article/Connecting-to-the-FileMaker-Server-Admin-Console-Troubleshooting-1503693054884?language=en_US
